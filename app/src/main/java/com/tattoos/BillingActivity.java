@@ -267,7 +267,7 @@ public class BillingActivity extends AppCompatActivity implements PurchasesUpdat
     private boolean verifyValidSignature(String signedData, String signature) {
         try {
             // To get key go to Developer Console > Select your app > Development Tools > Services & APIs.
-            String base64Key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAigSZAXIXHeUA6IhAM9Ui3/1+l4MTNvWyHQcP8Kqv/TOGiZDmazMlY3atzrL9m+lQI811apkomFXqcDHj3Wq27NRwm4AFF4xnGz5ZFG9EON0CFdD+nBI2ciswmA7v97CWsh+EtdbBxuUDg8l29f7YiCoj6dr7dt7rIYB5M2J2dwXlDchE/JE1QjHzVg9le9+hC4lfiY/QWXynWSxm3gv3dAYzGZ1Sb0L4QrkkT/PmF5LK/6vWAxb8boOo4lHdmhraSDGikNvxBG2v6kf8t0ZPThofIQMLE7zHBwlNGn6exJyadveq50YJm/zLrRFUz280tbMIOieMmcG0AjKC/ycp3wIDAQAB";
+            String base64Key = "// insert key here";
             return Security.verifyPurchase(base64Key, signedData, signature);
         } catch (IOException e) {
             return false;
